@@ -1,4 +1,4 @@
-update=1/12/2018 8:58:51 PM
+update=1/12/2018 9:19:03 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../flight_comp_git/live_telmetry/board_design/kicad_lib;../../flight_comp_git/live_telmetry/board_design/kicad_lib;../../flight_comp_git/live_telmetry/board_design/MASA.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -62,3 +62,4 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=E:/DesktopContainer/Balloon_584/SPACE_584
+LibName34=live_telem
