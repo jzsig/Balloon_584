@@ -1,4 +1,4 @@
-update=1/12/2018 9:19:03 PM
+update=1/21/2018 2:55:40 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../flight_comp_git/live_telmetry/board_design/kicad_lib;../../flight_comp_git/live_telmetry/board_design/kicad_lib;../../flight_comp_git/live_telmetry/board_design/MASA.pretty
+LibDir=../../board_design/kicad_lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
