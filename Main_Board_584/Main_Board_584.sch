@@ -464,7 +464,7 @@ $EndComp
 Text GLabel 10650 10000 2    60   Input ~ 0
 GND
 Text Label 4400 4050 0    60   ~ 0
-SCK
+SCLK
 Text Label 4400 3950 0    60   ~ 0
 MOSI
 Text Label 6550 1550 2    60   ~ 0
@@ -474,7 +474,7 @@ MISO
 Text Label 12800 1450 0    60   ~ 0
 MOSI
 Text Label 12800 1550 0    60   ~ 0
-SCK
+SCLK
 Text Label 12800 1650 0    60   ~ 0
 RADIO_CS
 $Comp
