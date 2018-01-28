@@ -769,14 +769,13 @@ F 3 "" H 14000 3250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 13050 3500 0    60   ~ 0
-MOSI
-Text Label 13050 3600 0    60   ~ 0
 MISO
+Text Label 13050 3600 0    60   ~ 0
+MOSI
 Text Label 13050 3700 0    60   ~ 0
 SCLK
 Text Label 13050 3800 0    60   ~ 0
 MPU_CS
-NoConn ~ 13450 3350
 Text GLabel 14700 3800 2    60   Input ~ 0
 GND
 NoConn ~ 14550 3100
@@ -1234,7 +1233,7 @@ Wire Wire Line
 Wire Wire Line
 	12700 3250 12700 3300
 Wire Wire Line
-	12400 3650 12700 3650
+	12400 3650 12800 3650
 Wire Wire Line
 	12700 3650 12700 3600
 Wire Wire Line
@@ -1626,4 +1625,9 @@ Wire Wire Line
 Connection ~ 2200 6150
 Text GLabel 2300 6750 2    60   Input ~ 0
 GND
+Wire Wire Line
+	13450 3350 12800 3350
+Wire Wire Line
+	12800 3350 12800 3650
+Connection ~ 12700 3650
 $EndSCHEMATC
