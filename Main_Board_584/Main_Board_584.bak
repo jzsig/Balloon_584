@@ -31,8 +31,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:SPACE_584
-LIBS:live_telem
 LIBS:Main_Board_584-cache
 EELAYER 25 0
 EELAYER END
@@ -464,7 +462,7 @@ $EndComp
 Text GLabel 10650 10000 2    60   Input ~ 0
 GND
 Text Label 4400 4050 0    60   ~ 0
-SCK
+SCLK
 Text Label 4400 3950 0    60   ~ 0
 MOSI
 Text Label 6550 1550 2    60   ~ 0
@@ -474,7 +472,7 @@ MISO
 Text Label 12800 1450 0    60   ~ 0
 MOSI
 Text Label 12800 1550 0    60   ~ 0
-SCK
+SCLK
 Text Label 12800 1650 0    60   ~ 0
 RADIO_CS
 $Comp
@@ -1630,4 +1628,76 @@ Wire Wire Line
 Wire Wire Line
 	12800 3350 12800 3650
 Connection ~ 12700 3650
+$Comp
+L R R13
+U 1 1 5A6E706C
+P 14800 7900
+F 0 "R13" V 14880 7900 50  0000 C CNN
+F 1 "100k" V 14800 7900 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 14730 7900 50  0001 C CNN
+F 3 "" H 14800 7900 50  0001 C CNN
+	1    14800 7900
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R15
+U 1 1 5A6E73DE
+P 14800 8450
+F 0 "R15" V 14880 8450 50  0000 C CNN
+F 1 "100k" V 14800 8450 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 14730 8450 50  0001 C CNN
+F 3 "" H 14800 8450 50  0001 C CNN
+	1    14800 8450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R14
+U 1 1 5A6E74E1
+P 15450 7900
+F 0 "R14" V 15530 7900 50  0000 C CNN
+F 1 "100k" V 15450 7900 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 15380 7900 50  0001 C CNN
+F 3 "" H 15450 7900 50  0001 C CNN
+	1    15450 7900
+	-1   0    0    1   
+$EndComp
+Text GLabel 15750 9000 2    60   Input ~ 0
+GND
+Text GLabel 15750 7350 2    60   Input ~ 0
+3V3
+Wire Wire Line
+	15750 7350 15150 7350
+Wire Wire Line
+	15150 7350 15150 7750
+Wire Wire Line
+	14800 7750 15450 7750
+Connection ~ 15150 7750
+Wire Wire Line
+	14800 8050 14800 8300
+Wire Wire Line
+	14800 8600 14800 9000
+Wire Wire Line
+	14800 9000 15750 9000
+$Comp
+L Conn_01x02 J7
+U 1 1 5A6E8DBF
+P 15700 8350
+F 0 "J7" H 15700 8450 50  0000 C CNN
+F 1 "Conn_01x02" H 15700 8150 50  0000 C CNN
+F 2 "MASA:A33199CT-ND" H 15700 8350 50  0001 C CNN
+F 3 "" H 15700 8350 50  0001 C CNN
+	1    15700 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 8050 15450 8350
+Wire Wire Line
+	15450 8350 15500 8350
+Wire Wire Line
+	15500 8450 15200 8450
+Wire Wire Line
+	15200 8450 15200 9000
+Connection ~ 15200 9000
+Text Notes 16000 8400 0    60   ~ 0
+Thermistor
 $EndSCHEMATC

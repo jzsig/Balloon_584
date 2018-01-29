@@ -291,6 +291,32 @@ X ~ 1 250 0 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# MCP6001T-I_OT
+#
+DEF MCP6001T-I_OT U 0 0 Y Y 1 F N
+F0 "U" -200 300 60 H V C CNN
+F1 "MCP6001T-I_OT" 0 500 60 H V C CNN
+F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011705" 200 300 60 H I L CNN
+F4 "MCP6001T-I/OTCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MCP6001T-I/OT" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" 200 700 60 H I L CNN "Family"
+F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011705" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/MCP6001T-I-OT/MCP6001T-I-OTCT-ND/697158" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC OPAMP GP 1MHZ RRO SOT23-5" 200 1000 60 H I L CNN "Description"
+F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 4 0 1 0 200 0 -200 -200 -200 200 200 0 f
+X VOUT 1 400 0 200 L 50 50 1 1 O
+X VSS 2 0 -300 200 U 50 50 1 1 W
+X VIN+ 3 -400 -100 200 R 50 50 1 1 I
+X VIN- 4 -400 100 200 R 50 50 1 1 I
+X VDD 5 0 300 200 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # MPU9250
 #
 DEF MPU9250 U 0 40 Y Y 1 F N

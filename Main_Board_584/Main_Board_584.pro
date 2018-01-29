@@ -1,4 +1,4 @@
-update=1/21/2018 2:55:40 PM
+update=01/29/2018 11:45:48
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,6 @@ LibName31=contrib
 LibName32=valves
 LibName33=E:/DesktopContainer/Balloon_584/SPACE_584
 LibName34=live_telem
+LibName35=C:/School/SPACE584/Balloon_584/SPACE_584
+LibName36=C:/School/SPACE584/digikey-kicad-library/digikey-symbols/dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps
+LibName37=C:/School/SPACE584/digikey-kicad-library/digikey-symbols/dk_Linear-Amplifiers-Audio
