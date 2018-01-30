@@ -32,8 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SPACE_584
-LIBS:dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps
-LIBS:dk_Linear-Amplifiers-Audio
+LIBS:live_telem
 LIBS:Main_Board_584-cache
 EELAYER 25 0
 EELAYER END
@@ -1474,7 +1473,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 9450 5550 9450
 Wire Wire Line
-	5550 9350 5550 9450
+	5550 9450 5550 9350
 Wire Wire Line
 	4750 9350 5650 9350
 Connection ~ 5550 9350
@@ -1539,7 +1538,7 @@ Wire Wire Line
 Wire Wire Line
 	12700 3250 12700 3300
 Wire Wire Line
-	12400 3650 12800 3650
+	12400 3650 12850 3650
 Wire Wire Line
 	12700 3650 12700 3600
 Wire Wire Line
@@ -1691,10 +1690,6 @@ Connection ~ 2200 6350
 Wire Wire Line
 	2150 6150 2200 6150
 Connection ~ 2200 6150
-Wire Wire Line
-	13450 3350 12800 3350
-Wire Wire Line
-	12800 3350 12800 3650
 Connection ~ 12700 3650
 Wire Wire Line
 	15450 8350 15500 8350
@@ -1727,10 +1722,6 @@ Wire Wire Line
 	12900 8700 14600 8700
 Wire Wire Line
 	14600 8700 14600 8450
-Wire Wire Line
-	13300 7850 13300 7850
-Wire Wire Line
-	13300 7700 13300 8100
 Connection ~ 13300 7700
 Wire Wire Line
 	15450 8050 15450 8350
@@ -1740,4 +1731,76 @@ Wire Wire Line
 	13300 8400 13300 8700
 Connection ~ 13300 8700
 Connection ~ 15450 8250
+Wire Wire Line
+	13300 8100 13300 7700
+$Comp
+L LT1461 U?
+U 1 1 5A703EA6
+P 9000 6750
+F 0 "U?" H 9050 6800 60  0000 C CNN
+F 1 "LT1461" H 9150 6400 60  0000 C CNN
+F 2 "" H 9000 6750 60  0001 C CNN
+F 3 "" H 9000 6750 60  0001 C CNN
+	1    9000 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 6850 0    60   Input ~ 0
+VIN
+$Comp
+L C C?
+U 1 1 5A705189
+P 8150 7050
+F 0 "C?" H 8175 7150 50  0000 L CNN
+F 1 "1uF" H 8175 6950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8188 6900 50  0001 C CNN
+F 3 "" H 8150 7050 50  0001 C CNN
+	1    8150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A705360
+P 10500 7050
+F 0 "C?" H 10525 7150 50  0000 L CNN
+F 1 "2.2uF" H 10525 6950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10538 6900 50  0001 C CNN
+F 3 "" H 10500 7050 50  0001 C CNN
+	1    10500 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 6900 8150 6850
+Wire Wire Line
+	8050 6850 8800 6850
+Connection ~ 8150 6850
+Wire Wire Line
+	8800 6950 8700 6950
+Wire Wire Line
+	8700 6950 8700 6850
+Connection ~ 8700 6850
+Wire Wire Line
+	8150 7200 8150 7250
+Wire Wire Line
+	8150 7250 10850 7250
+Wire Wire Line
+	9850 7250 9850 6950
+Wire Wire Line
+	9850 6950 9800 6950
+Wire Wire Line
+	10500 7250 10500 7200
+Connection ~ 9850 7250
+Text GLabel 10850 7250 2    60   Input ~ 0
+GND
+Connection ~ 10500 7250
+Wire Wire Line
+	10500 6900 10500 6850
+Wire Wire Line
+	9800 6850 10850 6850
+Text GLabel 10850 6850 2    60   Input ~ 0
+2V5
+Connection ~ 10500 6850
+Wire Wire Line
+	12850 3650 12850 3350
+Wire Wire Line
+	12850 3350 13450 3350
 $EndSCHEMATC
