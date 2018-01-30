@@ -2296,4 +2296,15 @@ BARO_CS
 Text Label 6550 2900 2    60   ~ 0
 RADIO_CS
 NoConn ~ 5850 4550
+Wire Wire Line
+	4800 2650 4300 2650
+Text Label 4300 2650 0    60   ~ 0
+RADIO_INT
+NoConn ~ 4800 2550
+NoConn ~ 4800 3550
+NoConn ~ 6100 3300
+NoConn ~ 6100 3200
+NoConn ~ 6100 1850
+NoConn ~ 6100 1750
+NoConn ~ 6100 1650
 $EndSCHEMATC
