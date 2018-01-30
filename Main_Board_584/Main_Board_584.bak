@@ -995,7 +995,7 @@ F 3 "" H 3200 6500 50  0001 C CNN
 	1    3200 6500
 	1    0    0    -1  
 $EndComp
-Text Label 2600 6500 0    60   ~ 0
+Text Label 2100 6500 0    60   ~ 0
 FTU_FIRE
 Text GLabel 3100 6800 0    60   Input ~ 0
 GND
@@ -1623,8 +1623,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 6200 2900 6200
 Wire Wire Line
-	3000 6500 2600 6500
-Wire Wire Line
 	3300 6300 3300 6200
 Wire Wire Line
 	3300 6200 3200 6200
@@ -2193,4 +2191,19 @@ F 3 "" H 7050 6050 50  0001 C CNN
 	1    7050 6050
 	0    -1   -1   0   
 $EndComp
+$Comp
+L R R?
+U 1 1 5A738E3C
+P 2700 6500
+F 0 "R?" V 2780 6500 50  0000 C CNN
+F 1 "330" V 2700 6500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 2630 6500 50  0001 C CNN
+F 3 "" H 2700 6500 50  0001 C CNN
+	1    2700 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 6500 3000 6500
+Wire Wire Line
+	2100 6500 2550 6500
 $EndSCHEMATC
