@@ -410,7 +410,7 @@ HOST_EN
 Text GLabel 9700 9750 2    60   Input ~ 0
 GND
 Text Label 6550 2450 2    60   ~ 0
-HOST_EN
+MPU_CS
 $Comp
 L Battery_Cell BT2
 U 1 1 5A5B39E0
@@ -1009,7 +1009,7 @@ U 1 1 5A6DD39A
 P 11450 9200
 F 0 "M1" H 11450 9300 60  0000 C CNN
 F 1 "M3" H 11300 9200 60  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11450 9200 60  0001 C CNN
+F 2 "MASA:M3Mounting_Hole" H 11450 9200 60  0001 C CNN
 F 3 "" H 11450 9200 60  0001 C CNN
 	1    11450 9200
 	1    0    0    -1  
@@ -1020,7 +1020,7 @@ U 1 1 5A6DDE70
 P 11450 9400
 F 0 "M2" H 11450 9500 60  0000 C CNN
 F 1 "M3" H 11300 9400 60  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11450 9400 60  0001 C CNN
+F 2 "MASA:M3Mounting_Hole" H 11450 9400 60  0001 C CNN
 F 3 "" H 11450 9400 60  0001 C CNN
 	1    11450 9400
 	1    0    0    -1  
@@ -1031,7 +1031,7 @@ U 1 1 5A6DE0A4
 P 11450 9600
 F 0 "M3" H 11450 9700 60  0000 C CNN
 F 1 "M3" H 11300 9600 60  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11450 9600 60  0001 C CNN
+F 2 "MASA:M3Mounting_Hole" H 11450 9600 60  0001 C CNN
 F 3 "" H 11450 9600 60  0001 C CNN
 	1    11450 9600
 	1    0    0    -1  
@@ -1042,7 +1042,7 @@ U 1 1 5A6DE0AA
 P 11450 9800
 F 0 "M4" H 11450 9900 60  0000 C CNN
 F 1 "M3" H 11300 9800 60  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11450 9800 60  0001 C CNN
+F 2 "MASA:M3Mounting_Hole" H 11450 9800 60  0001 C CNN
 F 3 "" H 11450 9800 60  0001 C CNN
 	1    11450 9800
 	1    0    0    -1  
@@ -1053,7 +1053,7 @@ U 1 1 5A6DE14D
 P 11450 10000
 F 0 "M5" H 11450 10100 60  0000 C CNN
 F 1 "M3" H 11300 10000 60  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11450 10000 60  0001 C CNN
+F 2 "MASA:M3Mounting_Hole" H 11450 10000 60  0001 C CNN
 F 3 "" H 11450 10000 60  0001 C CNN
 	1    11450 10000
 	1    0    0    -1  
@@ -1680,7 +1680,7 @@ F 3 "" H 9450 7500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8500 7600 0    60   Input ~ 0
-VIN
+3V3
 $Comp
 L C C24
 U 1 1 5A705189
@@ -2223,4 +2223,77 @@ Wire Wire Line
 	950  1550 2100 1550
 Text GLabel 4350 1550 0    55   Input ~ 0
 2V5
+Wire Wire Line
+	4800 3650 4400 3650
+Wire Wire Line
+	4800 3750 4400 3750
+Text Label 4400 3750 0    60   ~ 0
+HEAT_ON
+Text Label 4400 3650 0    60   ~ 0
+FTU_FIRE
+Wire Wire Line
+	6100 3000 6550 3000
+Text Label 6550 3000 2    60   ~ 0
+LED_1
+Wire Wire Line
+	4300 2750 4800 2750
+Wire Wire Line
+	4300 2850 4800 2850
+Text Label 6550 3100 2    60   ~ 0
+LED_2
+Text Label 4300 2750 0    60   ~ 0
+LED_3
+Text Label 4300 2850 0    60   ~ 0
+LED_4
+Wire Wire Line
+	4300 2950 4800 2950
+Text Label 4300 2950 0    60   ~ 0
+TMP_VOUT
+Wire Wire Line
+	4800 3050 4300 3050
+Text Label 4300 3050 0    60   ~ 0
+TMP_nSHDN
+Wire Wire Line
+	6550 3100 6100 3100
+Wire Wire Line
+	4800 3150 4300 3150
+Wire Wire Line
+	4300 3250 4800 3250
+Wire Wire Line
+	4800 3350 4300 3350
+Wire Wire Line
+	4300 3450 4800 3450
+Text Label 4300 3150 0    60   ~ 0
+AIN_1
+Text Label 4300 3250 0    60   ~ 0
+BAT_SENSE
+Text Label 4300 3350 0    60   ~ 0
+AIN_2
+Text Label 4300 3450 0    60   ~ 0
+THERM
+Wire Wire Line
+	4800 3850 4400 3850
+Text Label 4400 3850 0    60   ~ 0
+uSD_CS
+Wire Wire Line
+	6100 2350 6550 2350
+Text Label 6550 2350 2    60   ~ 0
+HOST_EN
+Wire Wire Line
+	6100 3400 6550 3400
+Wire Wire Line
+	6550 3500 6100 3500
+Text Label 6550 3500 2    60   ~ 0
+RX
+Text Label 6550 3400 2    60   ~ 0
+TX
+Wire Wire Line
+	6550 2900 6100 2900
+Wire Wire Line
+	6550 2800 6100 2800
+Text Label 6550 2800 2    60   ~ 0
+BARO_CS
+Text Label 6550 2900 2    60   ~ 0
+RADIO_CS
+NoConn ~ 5850 4550
 $EndSCHEMATC
